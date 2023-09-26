@@ -1,0 +1,9 @@
+<div data-controller="button--float-component">
+  <% if button? %>
+    <%= button %>
+  <% else %>
+    <%= render(ButtonComponent.new(button_class: "peer")) { render(Icon::Bars3Component.new) } %>
+  <% end %>
+
+  <%= float %>
+</div>

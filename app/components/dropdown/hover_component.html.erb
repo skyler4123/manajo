@@ -1,0 +1,12 @@
+<div data-controller="dropdown--hover-component" class="relative inline-block group">
+  <button class='flex flex-row justify-center items-center bg-blue-500 text-white p-2 rounded-md'>
+      <%= header %>
+      <%= @label %>
+      <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+  </button>
+  <div>
+    <ul class='hidden group-hover:block absolute z-10 bg-slate-100 p-2 rounded-md'>
+      <%= content? ? content : "Dropdown Items" %>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div data-controller="carousel--carousel-component" class="flex flex-row items-center gap-x-5">
+  <button data-action="click->carousel--carousel-component#previous" class="cursor-pointer active:scale-125 scale-150">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+    </svg>
+  </button>
+  <div data-carousel--carousel-component-target="carousel" class="flex w-[768px] h-60 overflow-y-auto scroll-smooth snap-x snap-mandatory">
+    <% if content? %>
+      <%= content %>
+    <% else %>
+      <div class="w-96 h-60 flex-shrink-0 snap-start snap-always bg-slate-500"></div>
+      <div class="w-96 h-60 flex-shrink-0 snap-start snap-always bg-red-500"></div>
+      <div class="w-96 h-60 flex-shrink-0 snap-start snap-always bg-green-500"></div>
+      <div class="w-96 h-60 flex-shrink-0 snap-start snap-always bg-blue-500"></div>
+      <div class="w-96 h-60 flex-shrink-0 snap-start snap-always bg-rose-500"></div>
+      <div class="w-96 h-60 flex-shrink-0 snap-start snap-always bg-gray-500"></div>
+      <div class="w-96 h-60 flex-shrink-0 snap-start snap-always bg-violet-500"></div>
+      <div class="w-96 h-60 flex-shrink-0 snap-start snap-always bg-teal-500"></div>
+    <% end %>
+  </div>
+  <button data-action="click->carousel--carousel-component#next" class="cursor-pointer active:scale-125 scale-150">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+    </svg>
+  </button>
+</div>

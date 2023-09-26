@@ -1,0 +1,7 @@
+<div data-controller="link-component" class="<%= @klass %>">
+  <button class="<%= @button_class %>">
+    <a class="<%= @link_class %>" href="<%= @url %>">
+      <%= content? ? content : @label %>
+    </a>
+  </button>
+</div> 

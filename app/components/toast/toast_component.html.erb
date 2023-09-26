@@ -1,0 +1,39 @@
+<% case @position %>
+<% when :top_left %>
+  <div data-controller="toast--toast-component" class="fixed top-2 left-2">
+    <%= content %>
+  </div>
+<% when :top_center %>
+  <div data-controller="toast--toast-component" class="fixed top-2 left-1/2 transform -translate-x-1/2">
+    <%= content %>
+  </div>
+<% when :top_right %>
+  <div data-controller="toast--toast-component" class="fixed top-2 right-2">
+    <%= content %>
+  </div>
+<% when :center_left %>
+  <div data-controller="toast--toast-component" class="fixed top-1/2 left-2 transform -translate-y-1/2">
+    <%= content %>
+  </div>
+<% when :center_center %>
+  <div data-controller="toast--toast-component" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <%= content %>
+  </div>
+<% when :center_right %>
+  <div data-controller="toast--toast-component" class="fixed top-1/2 right-2 transform -translate-y-1/2">
+    <%= content %>
+  </div>
+<% when :bottom_left %>
+  <div data-controller="toast--toast-component" class="fixed bottom-2 left-2">
+    <%= content %>
+  </div>
+<% when :bottom_center %>
+  <div data-controller="toast--toast-component" class="fixed bottom-2 left-1/2 transform -translate-x-1/2">
+    <%= content %>
+  </div>
+<% when :bottom_right %>
+  <div data-controller="toast--toast-component" class="fixed bottom-2 right-2">
+    <%= content %>
+  </div>
+<% end %>
+

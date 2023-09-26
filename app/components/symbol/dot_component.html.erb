@@ -1,0 +1,23 @@
+<div data-controller="symbol--dot-component">
+  <% case @color %>
+  <% when :green %>
+    <div class="absolute top-0 right-0 inline-flex items-center justify-center w-4 h-4 text-[8px] font-bold text-white bg-green-500 border-2 border-white rounded-full dark:border-gray-900"><%= @number %></div>
+  <% when :white %>
+    <div class="absolute top-0 right-0 inline-flex items-center justify-center w-4 h-4 text-[8px] font-bold text-gray-700 bg-gray-200 border-2 border-white rounded-full dark:border-gray-900"><%= @number %></div>
+  <% when :gray %>
+    <div class="absolute top-0 right-0 inline-flex items-center justify-center w-4 h-4 text-[8px] font-bold text-white bg-gray-900 border-2 border-white rounded-full dark:border-gray-900"><%= @number %></div>
+  <% when :blue %>
+    <div class="absolute top-0 right-0 inline-flex items-center justify-center w-4 h-4 text-[8px] font-bold text-white bg-blue-600 border-2 border-white rounded-full dark:border-gray-900"><%= @number %></div>
+  <% when :red %>
+    <div class="absolute top-0 right-0 inline-flex items-center justify-center w-4 h-4 text-[8px] font-bold text-white bg-red-500 border-2 border-white rounded-full dark:border-gray-900"><%= @number %></div>
+  <% when :purple %>
+    <div class="absolute top-0 right-0 inline-flex items-center justify-center w-4 h-4 text-[8px] font-bold text-white bg-purple-500  border-2 border-white rounded-full dark:border-gray-900"><%= @number %></div>
+  <% when :indigo %>
+    <div class="absolute top-0 right-0 inline-flex items-center justify-center w-4 h-4 text-[8px] font-bold text-white bg-indigo-500 border-2 border-white rounded-full dark:border-gray-900"><%= @number %></div>
+  <% when :yellow %>
+    <div class="absolute top-0 right-0 inline-flex items-center justify-center w-4 h-4 text-[8px] font-bold text-white bg-yellow-300 border-2 border-white rounded-full dark:border-gray-900"><%= @number %></div>
+  <% when :teal %>
+    <div class="absolute top-0 right-0 inline-flex items-center justify-center w-4 h-4 text-[8px] font-bold text-white bg-teal-500 border-2 border-white rounded-full dark:border-gray-900"><%= @number %></div>
+  <% end %>
+  <%= content %>
+</div>

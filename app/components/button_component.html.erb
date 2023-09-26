@@ -1,0 +1,10 @@
+<div data-controller="button-component" class="<%= @klass %>">
+  <button type="button" class="<%= @button_class %>">
+    <%= header %>
+    <%= content? ? content : @label %>
+    <%= footer %>
+  </button>
+  <%= modal %>
+  <%= popover %>
+  <%= indicator %>
+</div>

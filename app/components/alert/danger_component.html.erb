@@ -1,0 +1,8 @@
+<div data-controller="alert--danger-component" class="flex flex-row justify-between p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+  <% if content? %>
+    <%= content %>
+  <% else %>
+    <div><%= @label %></div>
+    <%= render(Button::CloseComponent.new) if @closable %>
+  <% end %>
+</div>

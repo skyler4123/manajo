@@ -1,0 +1,7 @@
+<div data-controller="modal--modal-component" class='fixed h-screen w-screen inset-0 z-10 flex-col items-center justify-center bg-transparent hidden'>
+  <div class="h-screen w-screen bg-slate-500 cursor-pointer opacity-25" data-action="click->modal--modal-component#exit">
+  </div>
+  <div class="absolute opacity-100">
+    <%= content? ? content : "Modal Content here!" %>
+  </div>
+</div>
